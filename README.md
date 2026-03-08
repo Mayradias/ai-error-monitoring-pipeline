@@ -208,19 +208,24 @@ ai-error-monitoring-pipeline
 │ └── automationcollect_rejection_reasons.py
 
 ├── data processing
+
 │ └── data_processingprocess_rejection_reasons.py
 
 ├── sample data
+
 |  └── motivo_rejeicao_exemplo.xlsx
 |  └── motivo_rejeicao_exemplo.txt
 
 ├── dashboard
+
 │ └── dashboard_preview.png
 
 ├── images
+
 │ └── architecture_diagram.png
 
 ├── requirements.txt
+
 └── README.md
 
 
