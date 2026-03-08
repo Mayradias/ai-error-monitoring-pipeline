@@ -232,7 +232,7 @@ ai-error-monitoring-pipeline
 # Como Executar o Projeto
 
 1. Clone o repositório
-git clone https://github.com/seu-usuario/ai-error-monitoring-pipeline.git
+git clone https://github.com/Mayradias/ai-error-monitoring-pipeline.git
 
 2. Instale as dependências
 pip install -r requirements.txt
