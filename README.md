@@ -150,10 +150,14 @@ O script gera um arquivo texto contendo os motivos de rejeição extraídos.
 Arquivo gerado: **motivos_rejeicao.txt**
 
 Exemplo de estrutura:
+
 RELATÓRIO – MOTIVOS DE REJEIÇÃO
 Protocolo 0001
+
 Erro de extração no cabeçalho
+
 Protocolo 0002
+
 Alucinação nos assinantes
 
 ---
