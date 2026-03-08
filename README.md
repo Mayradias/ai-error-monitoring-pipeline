@@ -214,6 +214,7 @@ ai-error-monitoring-pipeline
 ├── sample data
 
 |  └── motivo_rejeicao_exemplo.xlsx
+
 |  └── motivo_rejeicao_exemplo.txt
 
 ├── dashboard
