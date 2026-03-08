@@ -152,6 +152,7 @@ Arquivo gerado: **motivos_rejeicao.txt**
 Exemplo de estrutura:
 
 RELATÓRIO – MOTIVOS DE REJEIÇÃO
+
 Protocolo 0001
 
 Erro de extração no cabeçalho
@@ -201,8 +202,10 @@ A análise histórica demonstrou que **treinamentos direcionados podem reduzir s
 # Estrutura do Projeto
 
 ai-error-monitoring-pipeline
+
 │
 ├── automation
+
 │ └── automationcollect_rejection_reasons.py
 │
 ├── data processing
