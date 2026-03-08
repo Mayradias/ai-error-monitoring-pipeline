@@ -1,8 +1,8 @@
 # AI Error Monitoring Pipeline
 
-Pipeline de monitoramento e análise de erros gerados por um sistema de Inteligência Artificial responsável por extrair informações de documentos societários processados em um portal de registro empresarial.
+Pipeline de monitoramento e análise de erros de um sistema de IA responsável por extrair informações de documentos societários.
 
-Este projeto automatiza a coleta de motivos de rejeição de documentos analisados pela IA, estrutura os dados de erro e gera dashboards analíticos para monitorar o desempenho do modelo ao longo do tempo.
+O projeto automatiza a coleta de motivos de rejeição, estrutura os dados de erro permitindo a criação de dashboards analíticos para acompanhar o desempenho do modelo.
 
 ---
 # Visão Geral do Projeto
@@ -10,6 +10,14 @@ Este projeto automatiza a coleta de motivos de rejeição de documentos analisad
 Este projeto foi desenvolvido para monitorar o desempenho de um sistema de IA responsável por extrair informações estruturadas de documentos societários enviados para um portal de registro empresarial.
 
 Quando a IA falha na extração correta das informações, o documento é revisado por um humano que registra um **motivo de rejeição** explicando o erro encontrado.
+
+Cada protocolo pode ter dois status principais:
+
+- **Aprovado**
+- **Rejeitado**
+
+Exemplo de motivo de rejeição: IA não extraiu CNPJ do cabeçalho
+
 
 O objetivo do projeto é:
 
@@ -82,21 +90,6 @@ A partir dessa observação, foi desenvolvido um pipeline de coleta, estruturaç
 - Monitoramento visual da performance da IA
 - Identificação de padrões de falha para orientar treinamento do modelo
 - Pipeline completo: **coleta → processamento → análise**
-
----
-
-# Fonte dos Dados
-
-Os dados são coletados de um **portal corporativo de processamento de documentos**, onde protocolos analisados por um sistema de IA são listados.
-
-Cada protocolo pode ter dois status principais:
-
-- **Aprovado**
-- **Rejeitado**
-
-Quando um protocolo é rejeitado, um revisor humano registra um **motivo de rejeição**, explicando o erro identificado no processamento automático.
-
-Exemplo de motivo de rejeição: IA não extraiu CNPJ do cabeçalho
 
 ---
 
@@ -190,12 +183,17 @@ A partir dessas categorias são geradas métricas como:
 
 A análise dos dados permitiu identificar falhas recorrentes e orientar treinamentos específicos do modelo de IA.
 
-Após a implementação de treinamentos direcionados para determinados tipos de erro, foram observadas melhorias significativas na taxa de acerto do sistema. Os principais foram: 
-Aumento de 15 p.p na acurácia geral. 
-Diminuição de 80% em erros de alucinação e 75% nos erros de extração. 
+Após a implementação de treinamentos direcionados para determinados tipos de erro, foram observadas melhorias significativas na taxa de acerto do sistema.
+
+Os principais foram: 
+
+Aumento de 15 pontos percentuais na acurácia geral. 
+
+Redução de 80% em erros de alucinação e 75% nos erros de extração. 
+
 Diminuição da variabilidade de erros. 
 
-A análise histórica demonstrou que **treinamentos direcionados podem reduzir significativamente a ocorrência desses erros mesmo em IA’s altamente treinadas**.
+A análise histórica demonstrou que **treinamentos direcionados com base na análise sistemática de erros podem reduzir significativamente falhas recorrentes, mesmo em IA’s altamente treinadas**.
 
 ---
 
