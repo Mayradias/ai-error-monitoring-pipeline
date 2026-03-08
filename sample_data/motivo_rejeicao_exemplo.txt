@@ -1,0 +1,62 @@
+RELATÓRIO – MOTIVOS DE REJEIÇÃO
+
+Protocolo 0001
+IA não extraiu representante da empresa
+------------------------------------------------------------
+Protocolo 0002
+IA não extraiu informações da empresa que constam no doc
+------------------------------------------------------------
+Protocolo 0003
+IA extraiu testemunhas como sócios
+------------------------------------------------------------
+Protocolo 0004
+IA extraiu cpf do assinante que não consta no doc
+------------------------------------------------------------
+Protocolo 0005
+IA extraiu data e local errados
+------------------------------------------------------------
+Protocolo 0006
+IA extraiu data e local errados
+------------------------------------------------------------
+Protocolo 0007
+IA extraiu data e local errados
+------------------------------------------------------------
+Protocolo 0008
+IA extraiu CNPJ do cabeçalho que não consta no doc
+------------------------------------------------------------
+Protocolo 0009
+IA não extraiu informações do cabeçalho que constam no doc
+------------------------------------------------------------
+Protocolo 0010
+IA não extraiu logradouro completo
+------------------------------------------------------------
+Protocolo 0011
+IA não extraiu informações que constam no cabeçalho
+------------------------------------------------------------
+Protocolo 0012
+IA não extraiu NIRE que consta no cabeçalho do doc
+------------------------------------------------------------
+Protocolo 0013
+IA não extraiu NIRE que consta no cabeçalho
+------------------------------------------------------------
+Protocolo 0014
+IA extraiu cnpj do cabeçalho que não constam no doc
+------------------------------------------------------------
+Protocolo 0015
+IA não extraiu NIRE do cabeçalho que consta no doc
+------------------------------------------------------------
+Protocolo 0016
+IA extraiu data errada
+------------------------------------------------------------
+Protocolo 0017
+IA não extraiu NIRE que consta no doc
+------------------------------------------------------------
+Protocolo 0018
+IA não extraiu nome da representante dos sócios
+------------------------------------------------------------
+Protocolo 0019
+IA extraiu "deinformatica" junto
+------------------------------------------------------------
+Protocolo 0020
+IA extraiu nome de dois assinantes em um só
+------------------------------------------------------------
