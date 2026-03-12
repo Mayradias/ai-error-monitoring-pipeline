@@ -37,8 +37,8 @@ O pipeline integra **automação web, processamento de dados e visualização em
 O pipeline segue quatro etapas principais:
 
 1. Coleta automática dos motivos de rejeição
-2. Estruturação dos dados de erro
-3. Classificação dos erros
+2. Estruturação e limpeza dos dados extraídos
+3. Classificação automática dos erros utilizando fuzzy matching e regras compostas
 4. Monitoramento analítico via dashboard
 
 ---
@@ -86,7 +86,10 @@ A partir dessa observação, foi desenvolvido um pipeline de coleta, estruturaç
 
 - Automação da coleta de motivos de rejeição em portal web
 - Extração estruturada de informações a partir de registros de erro
-- Classificação automática de erros utilizando similaridade textual
+- Classificação automática de erros utilizando fuzzy matching (RapidFuzz)
+- Suporte à identificação de **múltiplos erros em um mesmo protocolo**
+- Sistema de **regras simples e regras compostas** para classificação
+- Estruturação automática do dataset para análise
 - Monitoramento visual da performance da IA
 - Identificação de padrões de falha para orientar treinamento do modelo
 - Pipeline completo: **coleta → processamento → análise**
@@ -160,22 +163,46 @@ Alucinação nos assinantes
 
 Após a coleta, o arquivo TXT é transformado em um dataset estruturado.
 
-Utilizando **Pandas** e **RapidFuzz**, os motivos de rejeição são classificados em categorias de erro.
+Utilizando **Pandas** e **RapidFuzz**, os motivos de rejeição são analisados e classificados automaticamente em categorias de erro.
 
-Exemplos de categorias:
+O sistema utiliza dois tipos de regras de classificação:
 
-- erro de extração no cabeçalho
-- erro de extração nos assinantes
-- alucinação nos assinantes
-- erro de extração no preâmbulo
-- erro de extração no objeto social
+### Regras simples
 
-A partir dessas categorias são geradas métricas como:
+Detectam palavras-chave individuais associadas a determinados erros.
 
-- taxa de erro da IA
-- taxa de acerto
-- distribuição dos tipos de erro
-- evolução dos erros ao longo do tempo
+Exemplo:
+
+- "cabeçalho"
+- "bairro"
+- "rg"
+- "filial"
+
+### Regras compostas
+
+Detectam **combinações de palavras** que indicam um tipo específico de erro.
+
+Exemplo:
+
+- "entrada" + "sócio"
+- "saída" + "sócio"
+- "nome" + "empresa"
+
+Esse mecanismo reduz falsos positivos e melhora a precisão da categorização.
+
+### Detecção de múltiplos erros
+
+Um mesmo protocolo pode apresentar **mais de um erro simultaneamente**.
+
+Exemplo de motivo de rejeição:
+
+IA não extraiu o sócio X e também não extraiu a saída da sócia Y.
+
+Nesse caso, o sistema classifica o protocolo em **mais de uma categoria de erro**.
+
+Para permitir análises mais precisas, o dataset é expandido de forma que **cada categoria de erro seja registrada como uma linha independente**, mantendo o mesmo número de protocolo.
+
+Isso permite medir com mais precisão a frequência de cada tipo de falha da IA.
 
 ---
 
@@ -203,11 +230,11 @@ ai-error-monitoring-pipeline
 
 ├── automation
 
-│ └── automationcollect_rejection_reasons.py
+│ └── collect_rejection_reasons.py
 
 ├── data processing
 
-│ └── data_processingprocess_rejection_reasons.py
+│ └── process_rejection_reasons.py
 
 ├── sample data
 
