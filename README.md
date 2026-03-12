@@ -196,7 +196,7 @@ Um mesmo protocolo pode apresentar **mais de um erro simultaneamente**.
 
 Exemplo de motivo de rejeição:
 
-IA não extraiu o sócio X e também não extraiu a saída da sócia Y.
+IA não extraiu o saída de sócio X e também não extraiu nome da empresa.
 
 Nesse caso, o sistema classifica o protocolo em **mais de uma categoria de erro**.
 
