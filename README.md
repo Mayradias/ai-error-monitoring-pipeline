@@ -95,6 +95,8 @@ Extrai para cada protocolo rejeitado:
 - Seção
 - Data de rejeição
 - Motivo de rejeição
+
+  
 O fluxo inicial é iniciado manualmente pelo usuário — login, filtro e consulta. A partir desse ponto o script assume o controle da navegação e coleta todos os registros automaticamente, página a página.
  
 ---
@@ -109,6 +111,8 @@ Durante o desenvolvimento da automação foram enfrentados desafios comuns em ap
 - Recriação do DOM após navegação
 - Carregamento assíncrono da tabela
 - Paginação dinâmica
+
+  
 **Soluções implementadas:**
 - Relocalização de elementos por identificador único (PID) — elimina StaleElement definitivamente
 - Espera ativa para estabilização da tabela
