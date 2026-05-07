@@ -18,6 +18,8 @@ Cada protocolo pode ter dois status principais:
  
 - **Aprovado**
 - **Rejeitado**
+
+  
 O objetivo do projeto é:
  
 - automatizar a coleta dos motivos de rejeição e dos protocolos aprovados
