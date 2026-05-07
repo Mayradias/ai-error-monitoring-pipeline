@@ -1,0 +1,8 @@
+selenium
+webdriver-manager
+rapidfuzz
+pandas
+psycopg2-binary
+streamlit
+plotly
+openpyxl
