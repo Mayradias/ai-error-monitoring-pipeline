@@ -1,0 +1,68 @@
+RELATÓRIO – MOTIVOS DE REJEIÇÃO
+
+Protocolo: 001
+Seção: CLAUSULAS
+Data: 06/05/2026 09:34
+Motivo:
+IA extraiu errado o capital social
+------------------------------------------------------------
+Protocolo: 002
+Seção: CLAUSULAS
+Data: 05/05/2026 09:39
+Motivo:
+IA extraiu o nome da empresa errado.
+------------------------------------------------------------
+Protocolo: 003
+Seção: ASSINANTES
+Data: 04/05/2026 10:29
+Motivo:
+IA extraiu nome de representante errado
+------------------------------------------------------------
+Protocolo: 004
+Seção: CONSOLIDACAO
+Data: 30/04/2026 17:33
+Motivo:
+IA extraiu objeto social errado
+------------------------------------------------------------
+Protocolo: 005
+Seção: CONSOLIDACAO
+Data: 30/04/2026 17:04
+Motivo:
+IA extraiu "comerciovarejista" junto no objeto social devido a quebra de página
+------------------------------------------------------------
+Protocolo: 006
+Seção: ASSINANTES
+Data: 30/04/2026 12:04
+Motivo:
+IA alucinou na data e local de assinatura
+------------------------------------------------------------
+Protocolo: 007
+Seção: ASSINANTES
+Data: 30/04/2026 09:40
+Motivo:
+IA alucinou na data e local de assinatura
+------------------------------------------------------------
+Protocolo: 008
+Seção: CLAUSULAS
+Data: 29/04/2026 13:32
+Motivo:
+IA extraiu saída de sócio porém não há saída de sócio nesse documento
+------------------------------------------------------------
+Protocolo: 009
+Seção: CONSOLIDACAO
+Data: 28/04/2026 14:58
+Motivo:
+IA extraiu nome da empresa incorretamente
+------------------------------------------------------------
+Protocolo: 010
+Seção: PREAMBULO
+Data: 28/04/2026 10:25
+Motivo:
+IA não extraiu nome da empresa completo
+
+
+================ RESUMO FINAL ================
+Motivos extraídos: 10
+Protocolos únicos: 10
+Última página: 1
+==============================================
